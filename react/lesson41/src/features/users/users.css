@@ -1,0 +1,79 @@
+.users-container {
+  padding: 20px;
+  background-color: #f4f4f9;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.user-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.user-text {
+  font-size: 18px;
+  color: #333;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.delete-btn {
+  background-color: #e74c3c;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.loading-text,
+.error-text {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+
+.user-entry button {
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .user-entry {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-entry button {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
